@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
 def about(request):
-    return render(request, 'rango/about.html', {'boldmessage': "Rango says here is the about page."})
+    return HttpResponse("<h1>About</h1>")
